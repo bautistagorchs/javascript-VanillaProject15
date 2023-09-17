@@ -11,6 +11,10 @@ btns.forEach(function (btn) {
       count--;
     } else if (styles.contains("increase")) {
       count++;
+    } else if (styles.contains("less10")) {
+      count -= 10;
+    } else if (styles.contains("plus10")) {
+      count += 10;
     } else {
       count = 0;
     }
@@ -22,7 +26,7 @@ btns.forEach(function (btn) {
       value.style.color = "red";
     }
     if (count === 0) {
-      value.style.color = "#222";
+      value.style.color = "hsl(205, 86%, 17%)";
     }
     value.textContent = count;
   });
