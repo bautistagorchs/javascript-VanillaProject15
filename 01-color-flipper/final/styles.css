@@ -18,7 +18,7 @@ Variables
   --clr-primary-3: hsl(205, 72%, 37%);
   --clr-primary-4: hsl(205, 63%, 48%);
   /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
+  --clr-primary-5: hsl(205, 100%, 20%);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(205, 89%, 70%);
   --clr-primary-7: hsl(205, 90%, 76%);
@@ -36,8 +36,8 @@ Variables
   --clr-grey-7: hsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
+  --clr-grey-10: rgb(188, 143, 143);
+  --clr-white: #fcf9f9;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
@@ -99,7 +99,7 @@ h3 {
   font-size: 1.25rem;
 }
 h4 {
-  font-size: 0.875rem;
+  font-size: 1.2rem;
 }
 p {
   margin-bottom: 1.25rem;
@@ -116,7 +116,7 @@ p {
     font-size: 1.75rem;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   body {
     font-size: 1rem;
@@ -157,8 +157,9 @@ Nav
 ===============
 */
 nav {
+  /* ACA ESTA ESTO */
   background: var(--clr-white);
-  height: 3rem;
+  height: 4rem;
   display: grid;
   align-items: center;
   box-shadow: var(--dark-shadow);
@@ -181,13 +182,13 @@ nav {
 nav a {
   text-transform: capitalize;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: var(--clr-primary-1);
   letter-spacing: var(--spacing);
   margin-right: 1rem;
 }
 nav a:hover {
-  color: var(--clr-primary-5);
+  color: hsl(205, 66%, 77%);
 }
 /*
 =============== 
@@ -210,7 +211,7 @@ main {
   margin-bottom: 2.5rem;
 }
 .color {
-  color: var(--clr-primary-5);
+  color: hsl(205, 66%, 77%);
 }
 .btn-hero {
   font-family: var(--ff-primary);
@@ -219,14 +220,14 @@ main {
   color: var(--clr-black);
   letter-spacing: var(--spacing);
   display: inline-block;
-  font-weight: 700;
+  font-weight: 900;
   transition: var(--transition);
   border: 2px solid var(--clr-black);
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
-  font-size: 1rem;
-  padding: 0.75rem 1.25rem;
+  font-size: 1.35rem;
+  padding: 0.8rem 1.6rem;
 }
 .btn-hero:hover {
   color: var(--clr-white);
